@@ -1,0 +1,47 @@
+<h2 mat-dialog-title>{{modalTitle}}</h2>
+
+<mat-progress-bar mode="determinate" value="65"></mat-progress-bar><br>
+
+<mat-horizontal-stepper [linear]="false">
+  <mat-step [stepControl]="firstFormGroup" [completed]="first">
+  	<ng-template matStepLabel>
+		<span matTooltip="Info about the action">Mail Sent</span>
+	</ng-template>
+	<p  matTooltip="Mail sent to Application team" class="md-caption">Cve Id </p>
+	<p class="md-caption">Email Id </p>
+	<p class="md-caption">Cve Id </p>
+	<p class="md-caption">Email Id </p>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" [completed]="second">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Application Team</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" ediatble="false" [completed]="third">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>VM Team</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Comment" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+<ng-template matStepperIcon="edit">
+  <mat-icon>check</mat-icon>
+</ng-template>
+</mat-horizontal-stepper>
+
+<button mat-stroked-button (click)="sendMail()">Send Mail</button>
+
+

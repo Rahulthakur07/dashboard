@@ -1,0 +1,7 @@
+.mat-snack-bar-container {
+   max-width: 70px;
+}
+.example {
+  display: flex;
+  flex-direction: column;
+}
