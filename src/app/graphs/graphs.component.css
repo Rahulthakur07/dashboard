@@ -1,8 +1,4 @@
 .card{
-	max-width: 750px;
-	max-height: 750px;
-	float: left;
-	padding: 12px;
-	margin-top: 10px;
-	margin-left: 20px;
+	max-width: 350px;
+	max-height: 250px;
 }

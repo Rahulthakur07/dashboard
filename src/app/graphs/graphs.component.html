@@ -1,27 +1,32 @@
-<div class='md-padding' layout="row" layout-wrap>
-	<mat-card class="card">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Iceland&display=swap');
+</style>
+
+<div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+	<div>
+		<mat-card class="card" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
 		<mat-card-header>
-			<mat-card-title>Pie Chart</mat-card-title>
-			<mat-card-subtitle>Pie Chart</mat-card-subtitle>
+			<mat-card-title style="font-family: 'Iceland', cursive;">Vulnerablity Found</mat-card-title>
+			<mat-card-subtitle style="font-family: 'Iceland', cursive;font-size: 30px;">30</mat-card-subtitle>
 		</mat-card-header>
-
-		<mat-card-content>
-			<div>
-				<canvas id="canvas" width = "550px" height= "240px"></canvas>
-			</div>
-		</mat-card-content>
-	</mat-card>
-
-	<mat-card class="card">
+		</mat-card>
+	</div>
+	
+	<div>
+		<mat-card class="card" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
 		<mat-card-header>
-			<mat-card-title>Pie Chart</mat-card-title>
-			<mat-card-subtitle>Pie Chart</mat-card-subtitle>
-		</mat-card-header>
+			<mat-card-title style="font-family: 'Iceland', cursive;">Number of Mail Sent</mat-card-title>
+			<mat-card-subtitle style="font-family: 'Iceland', cursive;font-size: 30px;">30</mat-card-subtitle>
+			</mat-card-header>
+		</mat-card>
+	</div>
 
-		<mat-card-content>
-			<div>
-				<canvas id="canvas1" width = "550px" height= "240px"></canvas>
-			</div>
-		</mat-card-content>
-	</mat-card>
+	<div>
+		<mat-card class="card" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+		<mat-card-header>
+			<mat-card-title style="font-family: 'Iceland', cursive;">Number of Issue Closed</mat-card-title>
+			<mat-card-subtitle style="font-family: 'Iceland', cursive;font-size: 30px;">30</mat-card-subtitle>
+			</mat-card-header>
+		</mat-card>
+	</div>
 </div>
